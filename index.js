@@ -29,7 +29,7 @@ const url = require('url');
 const fs = require('fs');
 const path = require('path');
 
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 80;
 const COOLDOWN = process.env.COOLDOWN || 2000;
 const CACHE_DIR = 'cache';
 const WAIT_BEFORE_SS = process.env.WAIT_BEFORE_SCREENSHOT || 2000;
