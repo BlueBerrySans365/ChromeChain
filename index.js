@@ -39,15 +39,9 @@ var busy = [];
 
 console.log("VERCEL_ENV: $VERCEL_ENV")
 
-if [[ "$VERCEL_ENV" == "production" ]] ; then
-  // Proceed with the build
-  console.log("✅ - Build can proceed")
-  exit 1;
-
-else
-  // Don't build
-  console.log("🛑 - Build cancelled")
-  exit 0;
+if ("$shett" == "pro") {
+   exit 1
+}
 
 // Check if cache directory exists
 if (!fs.existsSync(CACHE_DIR)) {
