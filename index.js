@@ -40,7 +40,7 @@ var busy = [];
 console.log("VERCEL_ENV: $VERCEL_ENV")
 
 if ("$shett" == "pro") {
-   exit 1
+   exit(0);
 }
 
 // Check if cache directory exists
